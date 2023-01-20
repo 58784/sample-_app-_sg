@@ -72,27 +72,28 @@ p {
 }
 
 /* footer */
-
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
-  a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
+@media (max-width: 800px) {
+  footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid $gray-medium-light;
+    color: $gray-light;
+    a {
+      color: $gray;
+      &:hover {
+        color: $gray-darker;
+      }
     }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
+    small {
       float: left;
-      margin-left: 15px;
+    }
+    ul {
+      float: right;
+      list-style: none;
+      li {
+        float: left;
+        margin-left: 15px;
+      }
     }
   }
 }
@@ -180,4 +181,10 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
 }
